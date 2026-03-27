@@ -1,0 +1,2 @@
+# Getter-setter-proparty
+masala
