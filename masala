@@ -1,0 +1,84 @@
+#Pyton'da getter va setter - bu obyekt(class) ichidagi atributlarga (o'zgaruvchilarga) nazorat bilan murojaat qilish uchun ishlatildigan metodlar
+
+#Oddiy qilib aytganda:
+#Getter - qiymatini olish uchun
+#Setterm - qiynatini o'rnatish (yoki o'zgartirish) uchun
+
+# class User:
+#     def __init__(self,age):
+#         self._age = age
+#
+#     def get_age(self):
+#         return self._age
+#     def set_age(self, value):
+#         if value < 0:
+#             raise ValueError("Age manfiy bo'lishi mumkin emas")
+#         self._age = value
+#
+#
+# user = User(20)
+#
+# print(user.get_age())
+# user.set_age(25)
+# print(user.get_age())
+from ToDo.run import user_todos
+
+
+# class User:
+#     def __init__(self,age):
+#         self._age = age
+#
+#     @property
+#     def get(self):
+#         return self._age
+#     @get.setter
+#     def get(self, value):
+#         if value < 0:
+#             raise ValueError("Age manfiy bo'lishi mumkin emas")
+#         self._age = value
+#
+# user = User(20)
+#
+# print(user.get)
+# user.get = 25
+# print(user.get)
+
+# class User:
+#     def __init__(self,first_name, last_name, age):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.__age = age
+#
+#     def get_age(self):
+#         return self._age
+#
+#     def set_age(self, value):
+#         if value < 0:
+#             raise ValueError("Yosh manfiy bo'lmasligi lozim")
+#         self._age = value
+#
+# Bobur = User("Bobur", "Jovliyev", 15)
+#
+# print(Bobur.get_age())
+# Bobur.set_age(25)
+# print(Bobur.get_age())
+
+
+
+
+# class User:
+#     @property
+#     def get_age(self):
+#         return self.__age
+# 
+#     @get_age.setter
+#     def set_age(self, value):
+#         if value < 0:
+#             return ValueError("Yosh manfiy bo'lmasligi lozim")
+#         self.__age = value
+# 
+# Bobur = User("Bobur", "Jovliyev", 15)
+
+# print(Bobur.get_age())
+# Bobur.set_age = 25
+# print(Bobur.get_age())
